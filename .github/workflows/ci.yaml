@@ -177,5 +177,4 @@ jobs:
       build_result: ${{ needs.build-push.outputs.build_result || 'skipped' }}
       trivy_result: ${{ needs.build-push.outputs.trivy_result || 'skipped' }}
       push_result: ${{ needs.push-image.result || 'skipped' }}
-      gitleaks_result: ${{ needs.gitleaks.result || 'skipped' }}
     secrets: inherit
