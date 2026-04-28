@@ -23,7 +23,7 @@ jobs:
     if: github.event_name == 'pull_request'
     uses: USTBitesHub/ustbite-workflows/.github/workflows/gitleaks.yaml@feature/lint-scan
     with:
-      service_name: "delivery-service"
+      service_name: "cart-service"
     secrets: inherit
 
 
